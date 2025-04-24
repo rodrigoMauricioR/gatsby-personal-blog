@@ -317,6 +317,34 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
+body {
+  background: repeating-linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffffff 23px,
+    #d8e3f0 24px
+  );
+}
+
+/* Simulate red margin line like a notebook */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 60px;
+  width: 1px;
+  height: 100%;
+  background-color: #f66;
+  z-index: 0;
+}
+
+/* Push content away from the red margin line */
+.global-wrapper {
+  position: relative;
+  z-index: 1;
+  padding-left: 80px; /* increases space from red line */
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
@@ -329,3 +357,4 @@ a:focus {
     list-style-position: inside;
   }
 }
+

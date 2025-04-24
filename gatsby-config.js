@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `School and Career Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Rodrigo`,
+      summary: `who studies at the University of Texas at El Paso and is currently taking part in the Google Mentorship program!`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A blog using Gatsby to catalog college and career experiences`,
+    siteUrl: `http://localhost:8000/`, /* to be changed */
     social: {
-      twitter: `kylemathews`,
+      linkedin: `rodrigomaurr`,
     },
   },
   plugins: [
